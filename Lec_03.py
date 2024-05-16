@@ -7,7 +7,7 @@ This is a temporary script file.
 
 # ASSIGMENT N1
 #numeric
-#import datetime
+import datetime
 x = 10
 y = 5.1
 z = x + y
@@ -81,8 +81,42 @@ print(len(x))
 x = ['a', 'b', 'c', 'd', 'e']
 print(x[1:3])
 print(x[:3])
+print(x[::2]) #elimina cada 2
+
 
 
 print(x)
 print(len(x))
 
+# tupple don't hold assigments
+my_tupple = ('a', 'b', 'c', 'd', 'e')
+#my_tupple[0] = 'A'
+
+#print(my_tupple)
+
+#TypeError: 'tuple' object does not support item assignment
+
+
+# set {}-> useful when we need unique values
+my_set = {'a', 'b', 'a','c', 'c', 'd', 'e'}
+
+print(my_set)
+
+## Dictionaries
+### don´t have an order
+
+my_dict = {'a':100, 'b':200, 'c':200}
+           
+# So here I say position a equal to 100, B, 200, C 300.
+
+# date time
+
+my_date = datetime.datetime(2020, 3, 1)
+print(my_date)
+
+print(my_date.year)
+print(my_date.month)
+
+
+time_since_covid = datetime.datetime.now() - my_date
+print(time_since_covid)
